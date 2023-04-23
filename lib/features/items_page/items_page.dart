@@ -59,7 +59,10 @@ class _ItemsPageState extends State<ItemsPage> {
                           SizedBox(
                             height: height / maxIntent,
                           ),
-                          Image.asset(Assets.images.img.path),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 18.0),
+                            child: Image.asset(Assets.images.img.path),
+                          ),
                           Wrap(
                             alignment: WrapAlignment.start,
                             crossAxisAlignment: WrapCrossAlignment.start,
